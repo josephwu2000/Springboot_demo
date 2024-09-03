@@ -1,0 +1,15 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/practice_db
+    username: root
+    password: 397j4hwu
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jackson:
+    date-format: yyyy-MM-dd
+    time-zone: GMT+8
+    serialization:
+      write-dates-as-timestamps: false  #使用数值timestamp表示日期，true时会忽略date-format
